@@ -2,10 +2,10 @@
 
 ## Locations:
 
-Windows: /Users/{user}/Appdata/Local/nvim
+Windows: `/Users/{user}/Appdata/Local/nvim`
 
 
 ## Setup
 
 Windows: 
-- Run :PackerSync
+- Run `:PackerSync`
