@@ -14,6 +14,22 @@ return {
         },
       },
       ruff_lsp = {},
+      vtsls = {
+        settings = {
+          typescript = {
+            preferences = {
+              quoteStyle = "single",
+              importModuleSpecifier = "non-relative",
+            },
+          },
+          javascript = {
+            preferences = {
+              quoteStyle = "single",
+              importModuleSpecifier = "non-relative",
+            },
+          },
+        },
+      },
     },
     setup = {
       ["ruff"] = function()
