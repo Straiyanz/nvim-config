@@ -2,6 +2,9 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      rust_analyzer = {
+        mason = false,
+      },
       ruff = {
         cmd_env = { RUFF_TRACE = "messages" },
         init_options = {
