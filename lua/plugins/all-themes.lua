@@ -6,8 +6,17 @@ return {
     lazy = true,
     priority = 1000,
   },
+  -- Name and branch must match Omarchy 4's generated theme spec
+  -- (default/themed/neovim.lua.tpl). lazy merges specs by url and lets an
+  -- explicit name rename the merged plugin, so a bare "bjarneo/aether.nvim"
+  -- builds the cache into lazy/aether.nvim while every aether-themed
+  -- Omarchy 4 install renames it to lazy/aether at runtime. That cost a
+  -- network clone on first launch, and the theme fell back to tokyonight
+  -- until nvim was restarted.
   {
     "bjarneo/aether.nvim",
+    branch = "v3",
+    name = "aether",
     lazy = true,
     priority = 1000,
   },
